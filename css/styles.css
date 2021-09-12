@@ -1,0 +1,47 @@
+
+
+ body{ 
+     background-color: aquamarine;
+ }
+ 
+ .container{
+     background-color:cornflowerblue;
+     height:700px;
+     width: 900px;
+  
+ }
+
+.mancala-board{
+    background-color: greenyellow;
+    min-height: 550px;
+    min-width: 850px;
+}
+.pits-group-A,
+.pits-group-B {
+    display: flex;
+    justify-content:space-around;
+    margin:20px;
+}
+  
+
+ .pits-group-A{
+     min-height: 35px;
+     background-color:violet;
+ }
+
+ .pits-group-B{
+    min-height: 35px;
+    background-color:blue;
+ }
+.pit {
+    background-color: coral;
+    height: 50px;
+    width: 50px;
+    margin:10px
+}
+.mancala{
+    background-color: cyan;
+    height: 50px;
+    width: 50px;
+}
+ 
