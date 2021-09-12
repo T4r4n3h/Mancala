@@ -1,0 +1,45 @@
+1.startGame
+   1.1 define required constants 
+       const player A = 
+       const player B =
+       const Board = {
+           PA1 [m1,m2,m3,m4]
+           PA2 [m5,m6,m7,m8]
+           PA3 [m9,m10,m11,m12]
+           PA4 [m13,m14,m15,m16]
+           PA5 [m17,m18,m19,m20]
+           PA6 [m21,m22,m23,m24]
+           ManA []
+           PB1 [m25,m26,m27,m28]
+           PB2 [m29,m30,m31,m32]
+           PB3 [m33,m34,m35,m36]
+           PB4 [m37,m38,m39,m40]
+           PB5 [m41,m42,m43,m44]
+           PB6 [m45,m46,m47,m48]
+           ManB[]
+       }
+2. flow of the game :
+    2.1 PlayerA make a move
+        *FUNCTION that will "choose a 'PA'"
+        and distribute (all the ms in the array evently to 'PA+1' and 'PA#' become 'null')
+
+        IF last 'm' goes in 'ManA' "PlayerA plays again
+        OTHERWISE 'SWITCH-TURN" 
+
+
+    2.2 Player B - FUNCTION select 'PB#' and the "chooses 'PB#'"
+
+This flow continues untill all PAs and OR all PBs are empty
+
+
+3. choosing the WINNER:
+ if number of marbles of PalyerA is 'Greater; than PlayerB
+ PlayerA Wins; OTHERWISE, playerB wins 
+
+
+
+ 
+
+
+    
+
