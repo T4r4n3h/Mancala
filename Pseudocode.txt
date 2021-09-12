@@ -1,0 +1,11 @@
+1. lets go ahead and call are vairables in APP state in this case are gonna be the following 
+    *playerA and 
+    *playerB
+    *board
+    *playerTurn
+3. identify our cashed elements 
+2. declare a init-funciton to set our board to its initialized setting 
+  and create player A as the person who makes the first move 
+
+4. dynamic rendering ??
+
