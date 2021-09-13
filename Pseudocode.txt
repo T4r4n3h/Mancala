@@ -22,8 +22,8 @@ board = [ 4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4, 0]
   4.3 add event listener to the board to respond upon 'click';
     4.3.1 create the event listener to ONLY respond when it is one of the pits of the 'current playerTurn' and 
     4.3.2 only if it is the pits and NOT the mancalas
-    4.
+    4
 
-
+5. create an id for each pit to correspond with the array index.
    
 
