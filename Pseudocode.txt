@@ -4,8 +4,26 @@
     *board
     *playerTurn
 3. identify our cashed elements 
+    3.1 restart button
+    3.2 
+
 2. declare a init-funciton to set our board to its initialized setting 
   and create player A as the person who makes the first move 
 
+the board is an array where MancalaA is board[6] and MancalaB is board[13]
+
+board = [ 4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4, 0]
+
 4. dynamic rendering ??
+  4.1 create the board and the div's within the board ( see if you can make coordinates for the pits.
+
+  4.2 create init funtion to create the board
+
+  4.3 add event listener to the board to respond upon 'click';
+    4.3.1 create the event listener to ONLY respond when it is one of the pits of the 'current playerTurn' and 
+    4.3.2 only if it is the pits and NOT the mancalas
+    4.
+
+
+   
 
