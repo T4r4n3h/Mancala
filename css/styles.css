@@ -25,23 +25,23 @@
   
 
  .pits-group-A{
-     min-height: 35px;
+     min-height: 55px;
      background-color:violet;
  }
 
  .pits-group-B{
-    min-height: 35px;
+    min-height: 55px;
     background-color:blue;
  }
 .pit {
     background-color: coral;
-    height: 50px;
-    width: 50px;
+    height: 110px;
+    width: 110px;
     margin:10px
 }
 .mancala{
     background-color: cyan;
-    height: 50px;
-    width: 50px;
+    height: 110px;
+    width: 110px;
 }
  

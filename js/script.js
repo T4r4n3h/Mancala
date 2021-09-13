@@ -19,10 +19,13 @@ function init(){
 // write out a code that allows the ideces of the board corespond with doc.
 
 function handleClick(evt){
-    let i = 0;
-    let pitNum = parseInt(evt.target.id);
-    console.log(pitNum, pits[i])
+    
+        
+        let pitNum = parseInt(evt.target.id);
+        console.log(pits[pitNum],pitNum)
+   
+   
 }
 init()
-pits =  pits = [4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4, 0]
-for(let i = 0; i < pits.length; i++) 
+
+    
