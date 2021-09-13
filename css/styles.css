@@ -20,6 +20,7 @@
 .pits-group-B {
     display: flex;
     justify-content:space-around;
+    
     margin:20px;
 }
   
@@ -34,14 +35,18 @@
     background-color:blue;
  }
 .pit {
+    text-align: center;
     background-color: coral;
+    border-radius: 50%;
     height: 110px;
     width: 110px;
-    margin:10px
+    margin-top:auto;
+    margin-bottom: auto;
 }
 .mancala{
     background-color: cyan;
-    height: 110px;
+    border-radius: 40%;
+    height: 170px;
     width: 110px;
 }
  

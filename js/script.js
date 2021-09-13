@@ -3,6 +3,9 @@ let board;
 let playerTurn;
 let Winner;
 
+
+
+init()
 // CASHED ELEMENT REFERENCES
 let mancalaBoard = document.getElementById('mancala-board')
 let restartButton = document.getElementById('restart-button')
@@ -16,16 +19,22 @@ function init(){
     playerTurn = 1
     pits = [4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4, 0]
 }
-// write out a code that allows the ideces of the board corespond with doc.
+
 
 function handleClick(evt){
-    
-        
-        let pitNum = parseInt(evt.target.id);
-        console.log(pits[pitNum],pitNum)
-   
-   
-}
-init()
+    let pitIdx= parseInt(evt.target.id);
+    console.log(`whole # ${pitIdx},has ${pits[pitIdx]} marbles`)
+   // need a function to distribute marbles 
+ }
 
-    
+// writing a function to take the number of marble in the bowl and sitribute them while the number is greater thatn 0. incrementing the marbles as well as the whole and decrementing the original marbles 
+
+function distributeMarble(){
+    let numMarbles = pits[pitIdx];
+    pits[pitIdx]= 0;
+    pitIdx ++;
+    while (numMarbles > 0) {
+        pits
+    }
+numMarbles --
+}
