@@ -1,11 +1,11 @@
 
 
- body{ 
-     background-color: aquamarine;
- }
+ /* body{ 
+     background-color:wheat ;
+ } */
  
  .container{
-     background-color:cornflowerblue;
+     background-color:black;
      height:700px;
      width: 900px;
   
@@ -13,8 +13,8 @@
 
 .mancala-board{
     background-color: greenyellow;
-    min-height: 550px;
-    min-width: 850px;
+    min-height: 50px;
+    padding-top: 100px;
 }
 .pits-group-A,
 .pits-group-B {

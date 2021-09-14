@@ -1,19 +1,21 @@
 1. lets go ahead and call are vairables in APP state in this case are gonna be the following 
-    *playerA and 
-    *playerB
+    *playerA = 1 and 
+    *playerB = -1
+
     *board
     *playerTurn
 3. identify our cashed elements 
     3.1 restart button
-    3.2 
+    3.2 board pits
 
 2. declare a init-funciton to set our board to its initialized setting 
   and create player A as the person who makes the first move 
 
 the board is an array where MancalaA is board[6] and MancalaB is board[13]
-
-board = [ 4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4, 0]
-
+ 
+board = [ 4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4 , 4 , 4 , 0]
+index =   0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,13] 
+length of this array is 14
 4. dynamic rendering ??
   4.1 create the board and the div's within the board ( see if you can make coordinates for the pits.
 
@@ -21,9 +23,24 @@ board = [ 4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4, 0]
 
   4.3 add event listener to the board to respond upon 'click';
     4.3.1 create the event listener to ONLY respond when it is one of the pits of the 'current playerTurn' and 
-    4.3.2 only if it is the pits and NOT the mancalas
+    4.3.2 only if it is the pits and NOT the mancalas ()
     4
 
 5. create an id for each pit to correspond with the array index.
+
+6. for the event listener add a funciton to distribute the marbles. while the #marbles > 0 increment the pits[pitIdx] by one and decrement the # marbles
+
+    6.1 change the flow of the game with if statements 
+     
+     6.1.1 if the player is player A and the pitInx >13 continue to pitIndex  #0 again and continue; 
+
+      6.1.2 if the plaer is player B and the pitIdx is NOT 13 continue
+
+  7. change a p to show the number of marbles in the pit this is temporary and will change in the future
+
+
+
+
+
    
 
