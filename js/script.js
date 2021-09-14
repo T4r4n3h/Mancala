@@ -31,21 +31,26 @@ function handleClick(evt){
     let pitIdx= parseInt(evt.target.id);
     console.log(`at index # ${pitIdx}:  ${pits[pitIdx]} marbles`)
    // need a function to distribute marbles if the pit is not empty 
-   if(pits[pitIdx]=== 0) return;
+   if(pitIdx=== 0) return
    // playerA(1) can not click on pits 6-13
-   if(playerTurn > 0 && pits[pitIdx] > 6) return;
+   if(playerTurn ===1 && pitIdx > 6) return
    //playerB(-1) can not click on 13 or 0-6
    if(playerTurn < 0 && (pits[pitIdx] <= 6 || pit[Idx] == 13)) return;
-    distributeMarble()
+    // distributeMarble()
+    distributeMarble(pitIdx)
  }
 
 // writing a function to take the number of marble in the bowl and sitribute them while the number is greater thatn 0. incrementing the marbles as well as the whole and decrementing the original marbles 
 
-function distributeMarble(){
+function distributeMarble(i){
     let numMarbles = pits[i];
-   
+   pits[i]= 0
     while (numMarbles > 0){
-        console.log(numMarbles)
+        
+       numMarbles --
+       i++
+       pits[i] ++
+       console.log( numMarbles)
     }
     
  
