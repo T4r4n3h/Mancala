@@ -1,5 +1,5 @@
 
-# MANKALA
+# MANCALA
 ## The Game Overview
 ###  Stage 1 -Initial State
 1. Its a 2 player game Player-A and Player-B

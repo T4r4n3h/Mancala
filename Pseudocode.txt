@@ -52,3 +52,5 @@ if ((numMarbles === 1 && playerTurn > 1 && i = 6)) || (numMarbles === 1 && playe
 
    if ( numMarbles ==1 && manacalaOld <manacalaNew && B-7 old < b & new )
 
+9. end of game 
+   the game stops when all the pits from one side are empty 
