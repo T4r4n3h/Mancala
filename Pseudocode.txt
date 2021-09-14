@@ -44,10 +44,11 @@ length of this array is 14
 
   If playerTurn = 1 and the last marble is in pit 6 playerTurn =1 
   otherwise playerTurn = -1
-  
 
 
 
+if player's last mable is in the mancla, player goes again
+if ((numMarbles === 1 && playerTurn > 1 && i = 6)) || (numMarbles === 1 && playerTurn < 1 && i = 13)playerTurn = playerTurn
 
-   
+   if ( numMarbles ==1 && manacalaOld <manacalaNew && B-7 old < b & new )
 
