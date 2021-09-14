@@ -38,6 +38,13 @@ length of this array is 14
 
   7. change a p to show the number of marbles in the pit this is temporary and will change in the future
 
+8. while loop to distribute the # incrementaly to the right while number of marbles is > 0. 
+
+  with 2 conditions;
+
+  If playerTurn = 1 and the last marble is in pit 6 playerTurn =1 
+  otherwise playerTurn = -1
+  
 
 
 
