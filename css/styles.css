@@ -52,4 +52,10 @@
     height: 170px;
     width: 110px;
 }
+button {
+    width: 50%;
+    height: 40px;
+    font-size: large;
+
+}
  

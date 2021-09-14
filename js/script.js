@@ -73,7 +73,11 @@ function distributeMarble(i){
         if (playerTurn > 0 && numMarbles ===1 && (i === 5)){
             playerTurn === 1? playerTurn = -1 : playerTurn = 1
                console.log(`hit on distribute marble if condition `)
+        } else if(playerTurn < 0 && numMarbles === 1 && (i=== 12)){
+            playerTurn === 1? playerTurn = -1 : playerTurn = 1
+            console.log(playerTurn < 0, numMarbles === 1, i === 12)    
         }
+        
        numMarbles --
        i++
        if ( i ===14) i = 0;
