@@ -9,6 +9,7 @@
      background-color:black;
      height:700px;
      width: 900px;
+   
   
  }
 
@@ -17,6 +18,7 @@
     background-color: greenyellow;
     min-height: 50px;
     padding-top: 100px;
+    border-radius: 50%;
 }
 .pits-group-A,
 .pits-group-B {
@@ -30,11 +32,13 @@
  .pits-group-A{
      min-height: 55px;
      background-color:violet;
+     border-radius: 50%;
  }
 
  .pits-group-B{
     min-height: 55px;
     background-color:blue;
+    border-radius: 50%;
  }
 .pit {
     text-align: center;

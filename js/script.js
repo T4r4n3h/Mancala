@@ -17,7 +17,7 @@ restartButton.addEventListener('click', function(){
 // FUNCTIONS
 function init(){
     playerTurn = 1
-    pits = [0, 0, 0, 0, 0, 1, 1, 20, 2, 3, 2, 1, 6, 0]
+    pits = [20, 2, 3, 2, 1, 6, 0, 0, 0, 0, 0, 1, 1, 1]
 }
 
 function render(){
@@ -48,12 +48,7 @@ function handleClick(evt){
     playerTurn === 1? playerTurn = -1 : playerTurn = 1
     console.log(`this current :${playerTurn}`)
 
-
-
-
-    
     render();
-
     finishGame()
 
  }
@@ -88,12 +83,32 @@ function distributeMarble(i){
     
  
 }
+// game finish get the winner stage 
 
 function finishGame(){
    if(pits[7]=== 0 && pits[8]=== 0 &&pits[9]=== 0 && pits[10]=== 0 && pits[11]=== 0 && pits[12]=== 0 ){
-       console.log('sideA to collect all the marbles from their side and place in MancA')
+       
+       mancalaATotal = pits[0] + pits[1] + pits[2] + pits[3] + pits[4] +pits[5] +pits[6];
+        pits[6] = mancalaATotal
+        
+    console.log(`sideA to collect all the marbles from their side and place in mancalaA the toal is ${mancalaATotal}`)
     }
     if(pits[0]=== 0 && pits[1]=== 0 &&pits[2]=== 0 && pits[13]=== 0 && pits[4]=== 0 && pits[5]=== 0 ){
-        console.log('sideB to collect all the marbles from their side and place in MancB')
-     }
+        let mancalaBTotal = 0;
+        mancalaBTotal = pits[7] + pits[8] + pits[9] + pits[10] + pits[11] +pits[12] +pits[13];
+         pits[13] = mancalaBTotal;
+         
+         
+     console.log(`sideB to collect all the marbles from their side and place in mancala B the total is ${mancalaBTotal}`)
+
+    }
+
+    // i want to detemine the winner. at this point 
+    if(mancalaATotal > mancalaBTotal){
+        console.log( `playerA with ${mancalaATotal} Wins!`)
+    }
+    console.log( `playerB with ${mancalaBTotal} Wins!`)
+
+    
 }
+

@@ -52,5 +52,7 @@ if ((numMarbles === 1 && playerTurn > 1 && i = 6)) || (numMarbles === 1 && playe
 
    if ( numMarbles ==1 && manacalaOld <manacalaNew && B-7 old < b & new )
 
-9. end of game 
-   the game stops when all the pits from one side are empty 
+9. end of game with finishGame funciton :
+   the game stops when all the pits from one side are empty
+    right a function to collect all remaining numbers in the array and will create a new arrar called array A 
+     and  
