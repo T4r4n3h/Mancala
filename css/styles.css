@@ -1,65 +1,128 @@
 
 
- /* body{ 
-     background-color:wheat ;
- } */
- 
- .container{
-     
-     background-color:black;
-     height:700px;
-     width: 900px;
+body{
+    background-color:#E5E5E5;
+}
+.container{
+     margin-top: 20px;
    
-  
  }
 
 .mancala-board{
-    font-size: 40px;
-    background-color: greenyellow;
-    min-height: 50px;
-    padding-top: 100px;
-    border-radius: 50%;
-}
-.pits-group-A,
-.pits-group-B {
-    display: flex;
-    justify-content:space-around;
-    
-    margin:20px;
-}
-  
-
- .pits-group-A{
-     min-height: 55px;
-     background-color:violet;
-     border-radius: 50%;
- }
-
- .pits-group-B{
-    min-height: 55px;
-    background-color:blue;
-    border-radius: 50%;
- }
-.pit {
+    background-image: url(/images/Mancala_T\ version.svg);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    position: relative;
     text-align: center;
-    background-color: coral;
+    width: 613.93px;
+    height: 617.87px;
+    margin: auto;
+}
+.pit{
+    position:absolute;
+    text-align: center;
     border-radius: 50%;
-    height: 110px;
-    width: 110px;
-    margin-top:auto;
-    margin-bottom: auto;
+    width: 76.03px;
+    height:76.03px;
+
 }
 .mancala{
-    background-color: cyan;
-    text-align: center;
-    border-radius: 40%;
-    height: 170px;
-    width: 110px;
+    position:absolute;
+    width: 118px;
+    height: 176.31px;
+    border-radius: 50%;
+    transform: rotate(-60deg);
 }
+.side-A{
+    color:white
+}
+.side-B{
+    color: gray;
+}
+
+[id='0']{
+   
+    margin-top: 241.21px;
+    margin-left: 16.44px;
+}
+[id='1']{
+    margin-top: 341.96px;
+    margin-left: 30.43px;;  
+}
+[id='2']{
+    
+   
+    margin-top: 432.92px;
+    margin-left: 83.6px;;
+     
+}
+[id='3']{
+    margin-top:496.35px;
+    margin-left: 169.42px;;
+      
+}
+[id='4']{
+    margin-top:524.34px;
+    margin-left: 267.84px;; 
+      
+}
+[id='5']{  
+    margin-top:496.35px;
+    margin-left:360.2px;
+      
+}
+[id='7']{
+    margin-top:300.38px;
+    margin-left:521.47px;
+}
+[id='8']{
+    margin-top:199.63px;
+    margin-left:507.48px;
+      
+}
+[id='9']{
+    margin-top:108.68px;
+    margin-left:454.3px;
+      
+}
+[id='10']{
+    margin-top:45.24px;
+    margin-left:368.48px;
+      
+}
+[id='11']{
+    margin-top:17.26px;
+    margin-left:270.06px;
+      
+}
+[id='12']{
+    margin-top:45.24px;
+    margin-left:177.71px;
+      
+}
+[id='13']{
+  
+    position: absolute;
+    color: gray  ;
+  
+    margin-top: 135px;
+    margin-left: 165px;
+}
+[id='6']{
+  
+    
+    margin-top: 319.08px;
+    margin-left: 335px;
+}
+
 button {
-    width: 50%;
-    height: 40px;
-    font-size: large;
+    position:relative;
+    width: 76.03px;
+    height:76.03px;
+    border-radius: 50%;
+    font-size: 20pxx;
+    margin-left: auto;
+    
 
 }
  
