@@ -9,13 +9,25 @@ let mancalaBTotal = 0;
 // CASHED ELEMENT REFERENCES
 let mancalaBoard = document.getElementById('mancala-board')
 let restartButton = document.getElementById('restart-button')
-const winMessageTextEl =document.getElementById('winning-message')
+let startButton = document.getElementById('start-button')
+
+const welcomeMessageBoard = document.getElementById('welcome')
+const winMessageTextEl = document.querySelector('[data-winning-message-text]')
+const winMessageDivEl = document.getElementById('winning-message')
+
+
 //EVENT LISTENERS
+startButton.addEventListener('click', function (){
+    welcomeMessageBoard.classList.replace('welcome', 'noshow')
+    init()
+    render()
+})
 mancalaBoard.addEventListener('click', handleClick)
 restartButton.addEventListener('click', function(){
     init()
     render()
 })
+
 // FUNCTIONS
 function init(){
     playerTurn = 1
@@ -34,16 +46,12 @@ function handleClick(evt){
     let pitIdx= parseInt(evt.target.id);
     console.log(`at index # ${pitIdx}:  ${pits[pitIdx]} marbles`)
     console.log(`this player just played : ${playerTurn}`)
- 
-   if(pitIdx=== 6 || pitIdx === 13) return;
+
+    if(pitIdx=== 6 || pitIdx === 13) return;
    
-   if(playerTurn ===1 && pitIdx > 6) return;
+    if(playerTurn ===1 && pitIdx > 6) return;
    
-   if(playerTurn < 0 && (pitIdx <= 6 || pitIdx == 13)) return;
-  
-        
-    console.log(pits)
-   
+    if(playerTurn < 0 && (pitIdx <= 6 || pitIdx == 13)) return;          
    
     distributeMarble(pitIdx)
     playerTurn === 1? playerTurn = -1 : playerTurn = 1
@@ -51,11 +59,9 @@ function handleClick(evt){
 
     render();
     finishGame();
-    
+    }
 
- }
 
-// writing a function to take the number of marble in the bowl and sitribute them while the number is greater thatn 0. incrementing the marbles as well as the whole and decrementing the original marbles 
 
 function distributeMarble(i){
     let numMarbles = pits[i];
@@ -85,7 +91,7 @@ function distributeMarble(i){
     
  
 }
-// game finish get the winner stage 
+ 
 
 function finishGame(){
    
@@ -111,7 +117,7 @@ function finishGame(){
     
 }
  function getWinner(){
- // i want to detemine the winner. at this point 
+ winMessageTextEl.classList.add('show')
  if(mancalaATotal > mancalaBTotal){
      winMessageTextEl.innerText = `playerA with ${mancalaATotal} over ${mancalaBTotal}Wins!`
     console.log( `playerA with ${mancalaATotal} Wins!`)
