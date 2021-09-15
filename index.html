@@ -11,7 +11,7 @@
     <div class="container">
 
         <div class="mancala-board" id="mancala-board">
-            <div class="pits-group-B side-B" id="side-B">
+            <div class="side-B" id="side-B">
 
                 <div class="mancala side-B" id="13"></div>
                 <div class="pit side-B" id="12"></div>
@@ -23,7 +23,7 @@
             </div>
 
 
-            <div class="pits-group-A side-A" id="side-A">
+            <div class="side-A" id="side-A">
                 
                 <div class="pit side-A" id="0"></div>
                 <div class="pit side-A" id="1"></div>
@@ -34,10 +34,14 @@
                 <div class="mancala side-A" id="6"></div>
 
             </div>
-
             
         </div>
-        <button id="restart-button">Restart</button>
+        <div class="winning-message" id="winning-message">
+            <div data-winning-message-text>Player 1 Wins!</div>
+            <button id="restart-button">Restart</button>
+        </div>
+       
+       
 
         
     </div>

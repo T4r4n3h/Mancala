@@ -115,7 +115,7 @@ function finishGame(){
  // i want to detemine the winner. at this point 
  if(mancalaATotal > mancalaBTotal){
     console.log( `playerA with ${mancalaATotal} Wins!`)
-}
+ }
 console.log( `playerB with ${mancalaBTotal} Wins!`)
-}
+ }
 
