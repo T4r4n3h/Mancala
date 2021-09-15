@@ -9,7 +9,7 @@ let mancalaBTotal = 0;
 // CASHED ELEMENT REFERENCES
 let mancalaBoard = document.getElementById('mancala-board')
 let restartButton = document.getElementById('restart-button')
-
+const winMessageTextEl =document.getElementById('winning-message')
 //EVENT LISTENERS
 mancalaBoard.addEventListener('click', handleClick)
 restartButton.addEventListener('click', function(){
@@ -23,9 +23,8 @@ function init(){
 }
 
 function render(){
-   pits.forEach(function(pit, idx ){
-    // console.log(idx)
-       document.getElementById(idx).textContent = pit;
+    pits.forEach(function(pit, idx ){
+    document.getElementById(idx).textContent = pit;
        
    })
 }
@@ -35,13 +34,13 @@ function handleClick(evt){
     let pitIdx= parseInt(evt.target.id);
     console.log(`at index # ${pitIdx}:  ${pits[pitIdx]} marbles`)
     console.log(`this player just played : ${playerTurn}`)
-   // need a function to distribute marbles if the pit is not empty 
+ 
    if(pitIdx=== 6 || pitIdx === 13) return;
-   // playerA(1) can not click on pits 6-13
+   
    if(playerTurn ===1 && pitIdx > 6) return;
-   //playerB(-1) can not click on 13 or 0-6
+   
    if(playerTurn < 0 && (pitIdx <= 6 || pitIdx == 13)) return;
-    // distributeMarble()
+  
         
     console.log(pits)
    
@@ -114,8 +113,10 @@ function finishGame(){
  function getWinner(){
  // i want to detemine the winner. at this point 
  if(mancalaATotal > mancalaBTotal){
+     winMessageTextEl.innerText = `playerA with ${mancalaATotal} over ${mancalaBTotal}Wins!`
     console.log( `playerA with ${mancalaATotal} Wins!`)
  }
+ winMessageTextEl.innerText = `playerB with ${mancalaBTotal} over ${mancalaATotal}Wins!`
 console.log( `playerB with ${mancalaBTotal} Wins!`)
  }
 
