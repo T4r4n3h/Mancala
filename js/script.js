@@ -10,15 +10,18 @@ let mancalaBTotal = 0;
 let mancalaBoard = document.getElementById("mancala-board");
 let restartButton = document.getElementById("restart-button");
 let startButton = document.getElementById("start-button");
-let youTubeButton = document.getElementById("youTube");
+let youTubeBtnEl = document.getElementById("youTubeBtn");
+let youTubeDiv = document.getElementById("youTube");
 
 const welcomeMessageBoard = document.getElementById("welcome");
-const winMessageTextEl = document.querySelector("[data-winning-message-text]");
+const winMessageTextEl = document.getElementById("winning-message-Text");
 const winMessageDivEl = document.getElementById("winning-message");
 const playerTurnEl = document.getElementById("playerTurn");
 
 //EVENT LISTENERS
-youTubeButton.addEventListener("click", playeVideo);
+youTubeBtnEl.addEventListener("click", function () {
+  youTubeDiv.classList.remove("noshow");
+});
 
 startButton.addEventListener("click", function () {
   welcomeMessageBoard.classList.replace("welcome", "noshow");
@@ -35,7 +38,7 @@ restartButton.addEventListener("click", function () {
 
 function init() {
   playerTurn = 1;
-  pits = [0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0];
+  pits = [4, 4, 4, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4, 0];
   playerTurnEl.innerText = `Player A goes first`;
 }
 
@@ -48,9 +51,6 @@ function render() {
 
 function handleClick(evt) {
   let pitIdx = parseInt(evt.target.id);
-  console.log(`at index # ${pitIdx}:  ${pits[pitIdx]} marbles`);
-  console.log(`this player just played : ${playerTurn}`);
-
   if (pitIdx === 6 || pitIdx === 13) return;
 
   if (playerTurn === 1 && pitIdx > 6) return;
@@ -63,11 +63,9 @@ function handleClick(evt) {
   if (playerTurn < 1) {
     playerTurnEl.classList.add("Bturn");
     playerTurnEl.innerText = "Player B turn";
-    console.log(`its layer B's turn this current :${playerTurn}`);
   } else {
     playerTurnEl.textContent = "Player A turn";
     playerTurnEl.classList.replace("Bturn", "Aturn");
-    console.log(`its player A's turn this current :${playerTurn}`);
   }
 
   render();
@@ -80,14 +78,10 @@ function distributeMarble(i) {
   while (numMarbles > 0) {
     if (playerTurn > 0 && i === 13) i = 0;
     if (playerTurn < 0 && i === 6) i = 7;
-    console.log(playerTurn, numMarbles, i);
-    console.log(playerTurn > 0, numMarbles === 1, i === 6);
     if (playerTurn > 0 && numMarbles === 1 && i === 5) {
       playerTurn === 1 ? (playerTurn = -1) : (playerTurn = 1);
-      console.log(`hit on distribute marble if condition `);
     } else if (playerTurn < 0 && numMarbles === 1 && i === 12) {
       playerTurn === 1 ? (playerTurn = -1) : (playerTurn = 1);
-      console.log(playerTurn < 0, numMarbles === 1, i === 12);
     }
 
     numMarbles--;
@@ -110,10 +104,6 @@ function finishGame() {
       pits[0] + pits[1] + pits[2] + pits[3] + pits[4] + pits[5] + pits[6];
     pits[6] = mancalaATotal;
 
-    console.log(
-      `sideA to collect all the marbles from their side and place in mancalaA the toal is ${mancalaATotal}`
-    );
-
     getWinner();
   }
   if (
@@ -128,10 +118,6 @@ function finishGame() {
       pits[7] + pits[8] + pits[9] + pits[10] + pits[11] + pits[12] + pits[13];
     pits[13] = mancalaBTotal;
 
-    console.log(
-      `sideB to collect all the marbles from their side and place in mancala B the total is ${mancalaBTotal}`
-    );
-
     getWinner();
   }
 }
@@ -140,15 +126,12 @@ function getWinner() {
   mancalaBoard.removeEventListener;
   winMessageDivEl.classList.add("show-message");
   if (mancalaATotal > mancalaBTotal) {
-    winMessageTextEl.innerText = `The winner is playerA with ${mancalaATotal} over ${mancalaBTotal}!`;
-
-    console.log(`playerA with ${mancalaATotal} Wins!`);
+    winMessageTextEl.innerText = `Player A Wins!
+    Player A: ${mancalaATotal} 
+    Player B: ${mancalaBTotal}`;
   } else {
-    winMessageTextEl.innerText = `playerB with ${mancalaBTotal} over ${mancalaATotal}Wins!`;
-    console.log(`playerB with ${mancalaBTotal} Wins!`);
+    winMessageTextEl.innerText = `Player B Wins!
+    Player B: ${mancalaBTotal} 
+    Player A: ${mancalaATotal}`;
   }
-}
-
-function playeVideo(){
-    youTubeButton.classList.add('youTube');
 }

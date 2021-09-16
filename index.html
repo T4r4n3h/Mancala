@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mancala</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <div class="container">
-
-        <div class="mancala-board" id="mancala-board">
-            
-            <div class="side-B" id="side-B">
-
-                <div class="mancala side-B" id="13"></div>
-                <div class="pit side-B" id="12"></div>
-                <div class="pit side-B" id="11"></div>
-                <div class="pit side-B" id="10"></div>
-                <div class="pit side-B" id="9"></div>
-                <div class="pit side-B" id="8"></div>
-                <div class="pit side-B" id="7"></div>
-            </div>
-
-
-            <div class="side-A" id="side-A">
-                
-                <div class="pit side-A" id="0"></div>
-                <div class="pit side-A" id="1"></div>
-                <div class="pit side-A" id="2"></div>
-                <div class="pit side-A" id="3"></div>
-                <div class="pit side-A" id="4"></div>
-                <div class="pit side-A" id="5"></div>
-                <div class="mancala side-A" id="6"></div>
-
-            </div>
-            
+      <div class="mancala-board" id="mancala-board">
+        <div class="side-B" id="side-B">
+          <div class="mancala side-B" id="13"></div>
+          <div class="pit side-B" id="12"></div>
+          <div class="pit side-B" id="11"></div>
+          <div class="pit side-B" id="10"></div>
+          <div class="pit side-B" id="9"></div>
+          <div class="pit side-B" id="8"></div>
+          <div class="pit side-B" id="7"></div>
         </div>
-        <div class="welcome " id="welcome">
-            
-            <div data-welcome-message-text>Welcome to MANCALA!</div>
-            <button id="start-button">Start</button>
 
-            <p>You can refresh your memory on the rules by watching this video</p>
-            <iframe id="youTube" src="https://www.youtube.com/embed/niqqq4WA6ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
+        <div class="side-A" id="side-A">
+          <div class="pit side-A" id="0"></div>
+          <div class="pit side-A" id="1"></div>
+          <div class="pit side-A" id="2"></div>
+          <div class="pit side-A" id="3"></div>
+          <div class="pit side-A" id="4"></div>
+          <div class="pit side-A" id="5"></div>
+          <div class="mancala side-A" id="6"></div>
         </div>
-        <div class="winning-message " id="winning-message">
-            <div data-winning-message-text>Player 1 Wins!</div>
-            <button id="restart-button">Restart</button>
+      </div>
+
+
+      <div class="welcome" id="welcome">
+        <div id="welcomeBanner" data-welcome-message-text>
+          <button id="start-button">Start Here</button>
+
+          <button id="youTubeBtn">How to Play</button>
         </div>
+
+        <div class="gameName" id="gameName">
+          <h2>MANCALA</h2>         
+        </div>
+
+        <div class="youTube noshow" id="youTube">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube-nocookie.com/embed/niqqq4WA6ec"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+      </div>
       
-            <h2 id="playerTurn">  </h2>
-        
-       
-           
 
-        
+      <div class="winning-message" id="winning-message">
+        <div data-winning-message-text>
+            <h3 id="winning-message-Text">And the Winner is ...</h3>
+        </div>
+        <button id="restart-button">Play Again</button>
+      </div>
+
+      <h2 id="playerTurn"></h2>
     </div>
 
-
-
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
