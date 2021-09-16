@@ -12,7 +12,7 @@ body{
    
  }
 .mancala-board{
-    background-image: url(/images/Mancala_T\ version.svg);
+    background-image: url('/images/YinYan.svg');
     
     font-size: 60px;
     position: relative;
@@ -160,6 +160,11 @@ iframe{
 .show-message{
     display:flex;
 }
+iframe{
+    border-radius: 50%;
+    width: 200px;
+    height:200px;
+}
 button {
     background-color:#E5E5E5;
     color: rgb(80, 79, 79);
@@ -174,6 +179,9 @@ button {
 button:hover{
     background-color: rgb(80, 79, 79);
     color: #E5E5E5;
+}
+#start-button{
+    margin-bottom: 300px;
 }
 
 h2{
