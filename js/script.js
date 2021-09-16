@@ -110,7 +110,7 @@ function finishGame() {
     pits[0] === 0 &&
     pits[1] === 0 &&
     pits[2] === 0 &&
-    pits[13] === 0 &&
+    pits[3] === 0 &&
     pits[4] === 0 &&
     pits[5] === 0
   ) {
