@@ -12,7 +12,7 @@ body{
    
  }
 .mancala-board{
-    background-image: url('/images/YinYan.svg');
+    background-image: url('images/YinYan.svg');
     
     font-size: 60px;
     position: relative;
