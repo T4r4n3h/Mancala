@@ -110,10 +110,7 @@ body{
     margin-left: 335px;
 }
 
-section{
-    background-color: aquamarine;
-    min-height: 15px;
-}
+
 
 .welcome{
     
@@ -144,11 +141,6 @@ iframe{
 
 
 
-
-
-
-
-
 .winning-message{
     display: none;
     position: absolute;
@@ -161,9 +153,12 @@ iframe{
     justify-content: center;
     align-items: center;
     color: #E5E5E5;
-    font-size: 5rem;
+    font-size: 3rem;
     flex-direction: column;
     cursor: pointer;
+}
+.show-message{
+    display:flex;
 }
 button {
     background-color:#E5E5E5;
@@ -180,15 +175,14 @@ button:hover{
     background-color: rgb(80, 79, 79);
     color: #E5E5E5;
 }
-.winning-message.show{
-    display: flex;
-}
+
 h2{
     text-align: center;
-    font-size: 35px;
+    
 }
-.Aturn{
 
+.Aturn{
+color: gray;
 }
 .Bturn{
 color:white;
