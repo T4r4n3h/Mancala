@@ -12,7 +12,7 @@ body{
    
  }
 .mancala-board{
-    background-image: url('images/YinYan.svg');
+    background-image: url('/images/YinYang-copy.svg');
     
     font-size: 60px;
     position: relative;
@@ -135,8 +135,14 @@ p{
 iframe{
    border-radius: 50%; 
 }
+.youTube{
+    width:590px;
+    height:315px;
+   
+}
 .noshow{
     display: none;
+    
 }
 
 
