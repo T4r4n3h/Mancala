@@ -213,8 +213,9 @@ color:white;
     min-height: 10px;
 }
 .youTube{
- width: 400px; ;
- height:150px ;
+ width:fit-content;
+ margin: auto;
+
 }
 #gameName h2{
     margin-top: 0px;
