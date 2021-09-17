@@ -1,9 +1,4 @@
-
-- **A ``README.md`` file** with these sections:
-
-  ☐ **\<Your game's title\>**: A description of your game.  Background info of the game is a nice touch.
-  
-# MANCALA
+ # MANCALA
 Mancala is an African originated game which is played by 2 players. The game is performed on a Mancal Board which has  6 pits  and 1 Mancala( score pit) per player. There are 48 peices of marble that are distributed evenly in each players cup 9 4 per pit). 
 The objective of each player is to collect as many marbles in their mancal as possible. below is a picture of a more traditional game board:
 ![Traditional Board](./images/Traditional-Board.png)
